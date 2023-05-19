@@ -6,8 +6,7 @@
 
 /* ! Temporary */
 header {
-    height: 50px;
-    background-color: lightgray;
+    height: 80px;
 }
 
 .inside-header {
@@ -19,7 +18,18 @@ header {
     border: 2px solid black;
     background-color: #fff;
 }
+
+.fa-bell {
+    color: orange;
+}
 /* ! ********* */
+
+/* 
+E9ECEF
+    background-color: #e5e5e5;
+
+
+*/
 
 
 /* Utils */
@@ -28,9 +38,24 @@ a {
     text-decoration: none;
 }
 
+.usr-bg-search {
+    background-color: #e5e5e5;
+}
+
+/* Header */
+header img {
+    height: 50px;
+    width: 50px;
+}
+
+.fa-magnifying-glass {
+    padding: 4px;
+}
+
+
 /* Main container */
 .main-container {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
 }
 
 /* Sidebar */
@@ -55,6 +80,11 @@ a {
 @media screen and (min-width: 992px) {
     .sidebar {
         flex-basis: 150px;
+    }
+
+    header img {
+        height: 50px;
+        width: 150px;
     }
 
     .main-content {
