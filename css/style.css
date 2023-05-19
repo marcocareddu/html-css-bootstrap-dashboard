@@ -1,0 +1,39 @@
+/* ! Temporary */
+header {
+    height: 50px;
+    background-color: lightgray;
+}
+/* ! ********* */
+
+
+
+
+/* Main container */
+.main-container {
+    height: calc(100vh - 50px);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 50px;
+    background-color: darkslategray;
+}
+
+/* Main Content */
+.main-content {
+    background-color: pink;
+    overflow-y: auto;
+}
+
+
+
+/*********************/
+/*     RESPONSIVE    */
+/*********************/
+
+/* SCREEN @992px */
+@media screen and (min-width: 992px) {
+    .sidebar {
+        width: 200px;
+    }
+}
