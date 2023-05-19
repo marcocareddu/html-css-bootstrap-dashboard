@@ -3,10 +3,17 @@ header {
     height: 50px;
     background-color: lightgray;
 }
+
+.inside-header {
+    height: 100px;
+    background-color: blue;
+}
+
+.col, .card {
+    border: 2px solid black;
+    background-color: #fff;
+}
 /* ! ********* */
-
-
-
 
 /* Main container */
 .main-container {
@@ -15,7 +22,7 @@ header {
 
 /* Sidebar */
 .sidebar {
-    width: 50px;
+    flex-basis: 50px;
     background-color: darkslategray;
 }
 
@@ -23,9 +30,8 @@ header {
 .main-content {
     background-color: pink;
     overflow-y: auto;
+    flex-basis: calc(100% - 50px);
 }
-
-
 
 /*********************/
 /*     RESPONSIVE    */
@@ -34,6 +40,12 @@ header {
 /* SCREEN @992px */
 @media screen and (min-width: 992px) {
     .sidebar {
-        width: 200px;
+        flex-basis: 200px;
+    }
+
+    .main-content {
+        background-color: pink;
+        overflow-y: auto;
+        flex-basis: calc(100% - 200px);
     }
 }
