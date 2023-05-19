@@ -1,3 +1,9 @@
+/* CUSTOM PROPERTIES */
+:root {
+    --usr-dark-color: #051e34;
+}
+
+
 /* ! Temporary */
 header {
     height: 50px;
@@ -15,6 +21,13 @@ header {
 }
 /* ! ********* */
 
+
+/* Utils */
+a {
+    color: white;
+    text-decoration: none;
+}
+
 /* Main container */
 .main-container {
     height: calc(100vh - 50px);
@@ -23,7 +36,8 @@ header {
 /* Sidebar */
 .sidebar {
     flex-basis: 50px;
-    background-color: darkslategray;
+    background-color: var(--usr-dark-color);
+    background-image: url(../img/sidebar-bg.png);
 }
 
 /* Main Content */
@@ -40,12 +54,12 @@ header {
 /* SCREEN @992px */
 @media screen and (min-width: 992px) {
     .sidebar {
-        flex-basis: 200px;
+        flex-basis: 150px;
     }
 
     .main-content {
         background-color: pink;
         overflow-y: auto;
-        flex-basis: calc(100% - 200px);
+        flex-basis: calc(100% - 150px);
     }
 }
