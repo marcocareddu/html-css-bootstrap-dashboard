@@ -127,9 +127,53 @@
                             </div>
 
                             <!-- FAQ Section -->
-                            <div class="card next-class">
-                                <h2>FAQ</h2>
-                                <div>Domande</div>
+                            <div class="card text-dark bg-light mb-3">
+                                <div class="card-header">F.A.Q.</div>
+                                <div class="card-body">
+
+                                    <!-- Accordion Section -->
+                                    <div class="accordion accordion-flush" id="faq-accordion">
+
+                                        <!-- Accordion 1 -->
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                                              Come aggiungere un nuovo studente?
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                            <div class="accordion-body">Clicca sul + in alto nella sezione blu.</div>
+                                          </div>
+                                        </div>
+
+                                        <!-- Accordion 2 -->
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+                                              Come posso accedere alle informazioni del mio account?
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                            <div class="accordion-body">Clicca sull'icona della campanella</div>
+                                          </div>
+                                        </div>
+                                        
+                                        <!-- Accordion 3 -->
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+                                              Posso usare questa sashboard da mobile?
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vero aspernatur labore maiores modi. Quaerat non illum ducimus nulla omnis eius quis earum eligendi, dolores nemo quo iure eos. Totam!</div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+
+                                </div>
                             </div>
                         </div>
 
@@ -142,15 +186,15 @@
                                 <div class="card-body">
                                     <ul class="list-group">
                                         <li class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                            <input class="form-check-input me-1" type="checkbox">
                                             Kickout nuove classi
                                         </li>
                                         <li class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                            <input class="form-check-input me-1" type="checkbox">
                                             Lezione su Bootstrap 5 in classe #75
                                         </li>
                                         <li class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                            <input class="form-check-input me-1" type="checkbox">
                                             Controllare username github studenti
                                         </li>
                                     </ul>
@@ -160,7 +204,7 @@
                             <!-- Graph Section -->
                             <div>
                                 <div class="card">
-                                    <img src="./img/stats.jpeg" class="card-img-top" alt="...">
+                                    <img src="./img/stats.jpeg" class="card-img-top" alt="Grafico">
                                     <div class="card-body">
                                       <h6 class="card-title">Utenti attivi</h6>
                                       <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>

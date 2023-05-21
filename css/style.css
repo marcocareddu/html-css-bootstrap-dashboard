@@ -9,7 +9,7 @@ header {
     height: 80px;
 }
 
-.col, .card {
+/* .col, .card {
     border: 2px solid black;
     background-color: #fff;
 }
@@ -17,7 +17,7 @@ header {
 .col-4 {
     border: 2px solid black;
     background-color: #fff;
-}
+} */
 
 .fa-bell {
     color: orange;
@@ -68,7 +68,7 @@ header img {
 
 /* Main Content */
 .main-content {
-    background-color: pink;
+    /* background-color: pink; */
     overflow-y: auto;
     flex-basis: calc(100% - 50px);
 }
