@@ -9,23 +9,13 @@ header {
     height: 80px;
 }
 
-/* .col, .card {
-    border: 2px solid black;
-    background-color: #fff;
-}
-
-.col-4 {
-    border: 2px solid black;
-    background-color: #fff;
-} */
-
 .fa-bell {
     color: orange;
 }
 /* ! ********* */
 
 /* Utils */
-li a {
+.sidebar a {
     color: white;
     text-decoration: none;
 }
@@ -61,16 +51,19 @@ header img {
 
 /* Sidebar */
 .sidebar {
-    flex-basis: 50px;
+    flex: 0 0 50px;
     background-color: var(--usr-dark-color);
     background-image: url(../img/sidebar-bg.png);
 }
 
 /* Main Content */
 .main-content {
-    /* background-color: pink; */
     overflow-y: auto;
-    flex-basis: calc(100% - 50px);
+    flex: 1 1 auto;
+}
+
+th img {
+    width: 30px;
 }
 
 /*********************/
@@ -86,10 +79,5 @@ header img {
     header img {
         height: 50px;
         width: 150px;
-    }
-
-    .main-content {
-        overflow-y: auto;
-        flex-basis: calc(100% - 150px);
     }
 }
