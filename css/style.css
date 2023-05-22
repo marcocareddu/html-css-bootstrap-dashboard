@@ -49,6 +49,11 @@ header img {
     padding-left: 0px;
 }
 
+#btn-add:hover {
+    background-color: #fff;
+    color: black;
+}
+
 /* Sidebar */
 .sidebar {
     flex: 0 0 50px;
