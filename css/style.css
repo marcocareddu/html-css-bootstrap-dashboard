@@ -66,6 +66,11 @@ th img {
     width: 30px;
 }
 
+/* Offcanvas */
+.offcanvas-end {
+    width: 100%;
+}
+
 /*********************/
 /*     RESPONSIVE    */
 /*********************/
@@ -79,5 +84,9 @@ th img {
     header img {
         height: 50px;
         width: 150px;
+    }
+
+    .offcanvas-end {
+        width: 700px;
     }
 }

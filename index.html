@@ -55,7 +55,7 @@
     <main>
       <div class="main-container d-flex">
 
-          <!-- Sidebar -->
+        <!-- Sidebar -->
         <div class="sidebar d-flex flex-column justify-content-between align-items-center py-3">
 
           <ul class="list-group">
@@ -95,30 +95,132 @@
 
               <div class="col-12 col-md-3 order-md-1 py-2">
                 <span class="pe-2">Nuovo Studente </span>
-                <button type="button" class="btn text-white border-2 border-white rounded-2 .bg-transparent fw-bold">+</button>
+                <button class="btn text-white border-2 border-white rounded-2 .bg-transparent fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop">+</button>
               </div>
 
-                <div class="col-12 col-md-6 py-2">
-                  <h2 class="d-inline">Boolean </h2><span class="badge rounded-pill usr-bg-darkblue">Piano Blaze</span>
+              <div class="col-12 col-md-6 py-2">
+                <h2 class="d-inline">Boolean </h2><span class="badge rounded-pill usr-bg-darkblue">Piano Blaze</span>
 
-                    <!-- ! DA RIPRENDERE! Breadcrumb -->
-                    <div>
-                      <ul id="breadcrumb" class="d-flex py-2 align-items-center flex-wrap">
-                        <li><span class="badge rounded-pill usr-bg-darkblue">3 app</span></li>
-                        <li class="px-1"><span class="fs-3">&#187;</span></li>
-                        <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue d-md-none fs-6">+</span></li>
-                        <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue d-none d-md-inline">Boolean mobile app</span></li>
-                        <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue d-none d-md-inline">Boolean web app</span></li>
-                        <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue d-none d-md-inline">Boolean blog app</span></li>
-                      </ul>
-                    </div>
-                </div>
+                  <!-- ! DA RIPRENDERE! Breadcrumb -->
+                  <div>
+                    <ul id="breadcrumb" class="d-flex py-2 align-items-center flex-wrap">
+                      <li><span class="badge rounded-pill usr-bg-darkblue">3 app</span></li>
+                      <li class="px-1"><span class="fs-3">&#187;</span></li>
+                      <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue d-md-none fs-6">+</span></li>
+                      <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue d-none d-md-inline">Boolean mobile app</span></li>
+                      <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue d-none d-md-inline">Boolean web app</span></li>
+                      <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue d-none d-md-inline">Boolean blog app</span></li>
+                    </ul>
+                  </div>
+              </div>
 
 
                 <div class="col-12 col-md-3 py-2">
                   <h6 class="fw-regular">Studenti online negli ultimi 30 minuti</h6>
                   <h3>125</h3>
                 </div>
+            </div>
+          </div>
+          
+          <!-- Offcanvas -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Inserisci un nuovo studente</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="row">
+                <div class="col-6">
+                  <form action="post">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" id="name" class="form-control">
+                  </form>
+                </div>
+                <div class="col-6">
+                  <form action="post">
+                    <label for="surname" class="form-label">Cognome</label>
+                    <input type="text" id="surname" class="form-control">
+                  </form>
+                </div>
+              </div>
+
+              <div class="row py-3">
+                <div class="col-6">
+                  <form action="post">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group flex-nowrap">
+                      <span class="input-group-text" id="addon-wrapping">@</span>
+                      <input type="text" id="email" class="form-control">
+                    </div>
+                  </form>
+                </div>
+                <div class="col-6">
+                  <form action="post">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" class="form-control">
+                  </form>
+                </div>
+              </div>
+
+              <div class="row py-3">
+                <div class="col-12">
+                  <form action="post">
+                    <label for="address" class="form-label">Indirizzo</label>
+                    <input type="text" id="address" class="form-control">
+                  </form>
+                </div>
+              </div>
+
+              <div class="row py-3">
+                <div class="col col-6">
+                  <form action="post">
+                    <label for="city" class="form-label">Città</label>
+                    <input type="text" id="city" class="form-control">
+                  </form>
+                </div>
+
+                <div class="col col-4">
+                  <form action="post">
+                    <label for="country" class="form-label">Stato</label>
+                    <div class="input-group">
+                      <select class="form-select" id="country">
+                        <option selected>Scegli...</option>
+                        <option value="1">Italia</option>
+                        <option value="2">Midgar</option>
+                        <option value="3">Terra di Mezzo</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="col col-2">
+                  <form action="post">
+                    <label for="cap" class="form-label">CAP</label>
+                    <input type="text" id="cap" class="form-control">
+                  </form>
+                </div>
+              </div>
+              
+              <div class="row py-3">
+                <form action="post">
+                  <label for="photo" class="form-label">Foto</label>
+                  <div class="input-group">
+                    <input type="file" class="form-control" id="photo">
+                  </div>
+                </form>
+              </div>
+
+              <div class="row py-3">
+                <form action="post">
+                  <input class="form-check-input me-1" type="checkbox">
+                  Seleziona per proseguire
+                </form>
+              </div>
+
+              <div class="py-3">
+                <button type="button" class="btn btn-primary">Salva</button>
+                <button type="button" class="btn btn-warning">Svuota</button>
+              </div>
             </div>
           </div>
             
@@ -298,7 +400,7 @@
                             <ul class="list-group">
                               <li class="list-group-item">
                                 <input class="form-check-input me-1" type="checkbox">
-                                  Kickout nuove classi
+                                  Kickoff nuove classi
                               </li>
                               <li class="list-group-item">
                                 <input class="form-check-input me-1" type="checkbox">
