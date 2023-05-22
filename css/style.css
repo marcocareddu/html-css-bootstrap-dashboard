@@ -3,17 +3,6 @@
     --usr-dark-color: #051e34;
 }
 
-
-/* ! Temporary */
-header {
-    height: 80px;
-}
-
-.fa-bell {
-    color: orange;
-}
-/* ! ********* */
-
 /* Utils */
 .sidebar a {
     color: white;
@@ -29,9 +18,17 @@ header {
 }
 
 /* Header */
+header {
+    height: 80px;
+}
+
 header img {
     height: 50px;
     width: 50px;
+}
+
+.fa-bell {
+    color: orange;
 }
 
 .fa-magnifying-glass {
@@ -56,7 +53,7 @@ header img {
 
 /* Sidebar */
 .sidebar {
-    flex: 0 0 50px;
+    flex: 0 0 70px;
     background-color: var(--usr-dark-color);
     background-image: url(../img/sidebar-bg.png);
 }
