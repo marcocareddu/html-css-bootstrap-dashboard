@@ -1,6 +1,9 @@
 /* CUSTOM PROPERTIES */
 :root {
     --usr-dark-color: #051e34;
+    --size-fixed-xs: 50px;
+    --size-fixed-sm: 70px;
+    --size-fixed-lg: 150px;
 }
 
 /* Utils */
@@ -14,12 +17,12 @@
 
 /* Header */
 header {
-    height: 80px;
+    height: var(--size-fixed-sm);
 }
 
 header img {
-    height: 50px;
-    width: 50px;
+    height: var(--size-fixed-xs);
+    width: var(--size-fixed-xs);
 }
 
 .fa-bell {
@@ -32,7 +35,7 @@ header img {
 
 /* Main container */
 .main-container {
-    height: calc(100vh - 80px);
+    height: calc(100vh - var(--size-fixed-sm));
 }
 
 /* Inside header */
@@ -40,14 +43,9 @@ header img {
     list-style-type: none;
 }
 
-#btn-add:hover {
-    background-color: #fff;
-    color: black;
-}
-
 /* Sidebar */
 .sidebar {
-    flex: 0 0 70px;
+    flex: 0 0 var(--size-fixed-sm);
     background-color: var(--usr-dark-color);
     background-image: url(../img/sidebar-bg.png);
 }
@@ -86,12 +84,12 @@ td img {
 /* SCREEN @992px */
 @media screen and (min-width: 992px) {
     .sidebar {
-        flex-basis: 150px;
+        flex-basis: var(--size-fixed-lg);
     }
 
     header img {
-        height: 50px;
-        width: 150px;
+        height: var(--size-fixed-xs);
+        width: var(--size-fixed-lg);
     }
 
     .offcanvas-end {
