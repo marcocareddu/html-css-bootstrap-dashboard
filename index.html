@@ -22,24 +22,33 @@
 
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-light bg-white">
-            <div class="container-fluid input-group">
-                <a class="navbar-brand" href="#">
-                    <img class="d-lg-none" src="./img/mobile-logo.png" alt="">
-                    <img class="d-none d-lg-flex" src="./img/logo.svg" alt="">
-                </a>
-                <span class="input-group-text border-0 rounded-start usr-bg-search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </span>
-                <input type="text" class="form-control border-0 usr-bg-search rounded-end" placeholder="Prova a cercare: Lezioni di Laravel">
-                <a class="px-2 text-secondary d-none d-lg-inline" href="#"><i class="fa-solid fa-list-ul"></i></a>
-                <a class="px-2 text-secondary d-none d-lg-inline" href="#"><i class="fa-solid fa-circle-question"></i></a>
-                <a class="px-2 text-secondary d-none d-lg-inline" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+      <nav class="navbar navbar-light bg-white">
+          <div class="container-fluid input-group">
+              <a class="navbar-brand" href="#">
+                  <img class="d-lg-none" src="./img/mobile-logo.png" alt="">
+                  <img class="d-none d-lg-flex" src="./img/logo.svg" alt="">
+              </a>
+              <span class="input-group-text border-0 rounded-start usr-bg-search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <input type="text" class="form-control border-0 usr-bg-search rounded-end" placeholder="Prova a cercare: Lezioni di Laravel">
+              <a class="px-2 text-secondary d-none d-lg-inline" href="#"><i class="fa-solid fa-list-ul"></i></a>
+              <a class="px-2 text-secondary d-none d-lg-inline" href="#"><i class="fa-solid fa-circle-question"></i></a>
+              <a class="px-2 text-secondary d-none d-lg-inline" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
 
-
-                <a class="px-2" href="#"><i class="fa-solid fa-bell"></i></a>
-            </div>
-          </nav>
+              <!-- Dropdown -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary bg-transparent border-0" data-bs-toggle="dropdown" data-bs-display="static">
+                  <i class="fa-solid fa-bell"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Profilo</a></li>
+                  <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+          </div>
+        </nav>
     </header>
 
     <!-- Main -->
@@ -94,12 +103,13 @@
 
                     <!-- ! DA RIPRENDERE! Breadcrumb -->
                     <div>
-                      <ul id="breadcrumb" class="d-flex py-2 align-items-center">
-                        <li><span class="badge rounded-pill usr-bg-darkblue"> 3 app</span></li>
-                        <li class="px-1"><span class="fs-3"> &#187;</span></li>
-                        <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue"> Boolean mobile app</span></li>
-                        <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue"> Boolean web app</span></li>
-                        <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue"> Boolean blog app</span></li>
+                      <ul id="breadcrumb" class="d-flex py-2 align-items-center flex-wrap">
+                        <li><span class="badge rounded-pill usr-bg-darkblue">3 app</span></li>
+                        <li class="px-1"><span class="fs-3">&#187;</span></li>
+                        <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue d-md-none fs-6">+</span></li>
+                        <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue d-none d-md-inline">Boolean mobile app</span></li>
+                        <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue d-none d-md-inline">Boolean web app</span></li>
+                        <li class="px-1"><span class="badge rounded-pill usr-bg-darkblue d-none d-md-inline">Boolean blog app</span></li>
                       </ul>
                     </div>
                 </div>
