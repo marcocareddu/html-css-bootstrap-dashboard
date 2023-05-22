@@ -43,7 +43,6 @@ header img {
 /* Inside header */
 #breadcrumb {
     list-style-type: none;
-    padding-left: 0px;
 }
 
 #btn-add:hover {
