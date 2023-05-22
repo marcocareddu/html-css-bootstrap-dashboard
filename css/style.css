@@ -63,6 +63,18 @@ header img {
     flex: 1 1 auto;
 }
 
+td {
+    font-size: 13px;
+}
+
+#first-column {
+    width: 39%;
+}
+
+#second-column {
+    width: 17%;
+}
+
 td img {
     width: 30px;
 }
