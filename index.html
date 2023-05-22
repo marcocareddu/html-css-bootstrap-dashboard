@@ -127,58 +127,49 @@
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
             </div>
             <div class="offcanvas-body">
-              <div class="row">
-                <div class="col-6">
-                  <form action="http://marcolanci.it/lezioni/read_form.php" method="POST">
+
+              <form action="https://marcolanci.it/lezioni/read_form.php" method="POST">
+                <div class="row">
+                  <div class="col-6">         
                     <label for="name" class="form-label">Nome</label>
                     <input type="text" id="name" name="name" class="form-control">
-                  </form>
-                </div>
-                <div class="col-6">
-                  <form  action="http://marcolanci.it/lezioni/read_form.php" method="POST">
+                  </div>
+
+                  <div class="col-6">
                     <label for="lastname" class="form-label">Cognome</label>
                     <input type="text" id="lastname" name="lastname" class="form-control">
-                  </form>
+                  </div>
                 </div>
-              </div>
 
-              <div class="row py-3">
-                <div class="col-6">
-                  <form action="http://marcolanci.it/lezioni/read_form.php" method="POST">
+                <div class="row py-3">
+                  <div class="col-6">
                     <label for="email" class="form-label">Email</label>
                     <div class="input-group flex-nowrap">
                       <span class="input-group-text" id="addon-wrapping">@</span>
                       <input type="email" id="email" name="email" class="form-control">
                     </div>
-                  </form>
-                </div>
-                <div class="col-6">
-                  <form action="http://marcolanci.it/lezioni/read_form.php" method="POST">
+                  </div>
+
+                  <div class="col-6">
                     <label for="password" class="form-label">Password</label>
                     <input type="password" id="password" name="password" class="form-control">
-                  </form>
+                  </div>
                 </div>
-              </div>
 
-              <div class="row py-3">
-                <div class="col-12">
-                  <form action="http://marcolanci.it/lezioni/read_form.php" method="POST">
+                <div class="row py-3">
+                  <div class="col-12">
                     <label for="address" class="form-label">Indirizzo</label>
                     <input type="text" id="address" name="address" class="form-control">
-                  </form>
+                  </div>
                 </div>
-              </div>
 
-              <div class="row py-3">
-                <div class="col col-6">
-                  <form action="http://marcolanci.it/lezioni/read_form.php" method="POST">
+                <div class="row py-3">
+                  <div class="col col-6">
                     <label for="city" class="form-label">Città</label>
                     <input type="text" id="city" name="city" class="form-control">
-                  </form>
-                </div>
+                  </div>
 
-                <div class="col col-4">
-                  <form action="http://marcolanci.it/lezioni/read_form.php" method="POST">
+                  <div class="col col-4">
                     <label for="country" class="form-label">Stato</label>
                     <div class="input-group">
                       <select class="form-select" id="country">
@@ -188,37 +179,32 @@
                         <option value="3">Terra di Mezzo</option>
                       </select>
                     </div>
-                  </form>
-                </div>
+                  </div>
 
-                <div class="col col-2">
-                  <form action="http://marcolanci.it/lezioni/read_form.php" method="POST">
+                  <div class="col col-2">
                     <label for="cap" class="form-label">CAP</label>
                     <input type="text" id="cap" name="cap" class="form-control">
-                  </form>
+                  </div>
                 </div>
-              </div>
-              
-              <div class="row py-3">
-                <form action="http://marcolanci.it/lezioni/read_form.php" method="POST">
+                
+                <div class="row py-3">
                   <label for="photo" class="form-label">Foto</label>
                   <div class="input-group">
                     <input type="file" class="form-control" name="file" id="photo">
                   </div>
-                </form>
-              </div>
+                </div>
 
-              <div class="row py-3">
-                <form action="http://marcolanci.it/lezioni/read_form.php" method="POST">
+                <div class="row py-3">
                   <input class="form-check-input me-1" name="form" type="checkbox">
                   Seleziona per proseguire
-                </form>
-              </div>
+                </div>
 
-              <div class="py-3">
-                <button type="button" class="btn btn-primary">Salva</button>
-                <button type="button" class="btn btn-warning">Svuota</button>
-              </div>
+                <div class="py-3">
+                  <button type="submit" class="btn btn-primary">Salva</button>
+                  <button type="reset" class="btn btn-warning">Svuota</button>
+                </div>
+
+              </form>
             </div>
           </div>
             
